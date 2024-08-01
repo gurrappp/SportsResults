@@ -33,7 +33,7 @@ namespace SportsResults
             }
             
             
-            Console.ReadLine();
+            
 
             return results;
         }

@@ -14,7 +14,8 @@ namespace SportsResults
             //scraper.GetResult("https://www.basketball-reference.com/boxscores/");
             var results = scraper.GetResults("https://www.basketball-reference.com/boxscores/?month=5&day=19&year=2024");
 
-
+            MailSender sender = new MailSender();
+            sender.SendMail(results);
 
         }
     }
